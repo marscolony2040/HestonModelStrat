@@ -18,11 +18,10 @@
 
 using namespace boost::property_tree;
 
-std::string premium_key = "8b5251ef15bf98c435a3faca00fe332c";
-//std::string premium_key = "968c869312f78f001e1db51db0039689";
+std::string premium_key = "Enter Financial Modeling Prep Key Here";
 
-std::string trade_key = "PKCKSYKVIQW5E0TVVB88";
-std::string trade_sec = "EIEwzaR6Dbwn3wcpfjCMh0gq3lRvhN4SevN3iBtG";
+std::string trade_key = "Enter Alpaca Key Here";
+std::string trade_sec = "Enter Alpaca Secret Here";
 
 std::string order_url = "https://paper-api.alpaca.markets/v2/positions";
 std::string trade_url = "https://paper-api.alpaca.markets/v2/orders";
