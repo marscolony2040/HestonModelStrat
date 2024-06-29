@@ -303,22 +303,6 @@ void OptionsParser(ptree data, std::string set_date, std::map<std::string, std::
     }
 }
 
-double OptionsData(std::string ticker){
-    std::string url = "https://www.optionsprofitcalculator.com/ajax/getOptions?stock=" + ticker + "&reqId=1";
-    std::string resp = GET(url);
-    ptree data = JSON(resp);
-    std::string set_date = "2024-06-14";
-    std::map<std::string, std::vector<double>> calls, puts;
-    OptionsParser(data, set_date, std::ref(calls), std::ref(puts));
-    for(auto & entry : calls){
-        for(auto & entry2 : entry.second){
-            std::cout << entry2 << std::endl;
-        }
-    }
-    // S, K, r, q, t, optype=
-    return 0.0;
-}
-
 int main()
 {
     srand(time(NULL));
